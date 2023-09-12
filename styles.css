@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+:root {
+  --white: #ffffff;
+  --blue: #0846a8;
+  --lightblue: #0060f0;
+  --grey: #414042;
+  --lightgrey: #717171;
+  --verylightgrey: #7171717f;
+  --red: rgb(255, 0, 0);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+header {
+  height: 60px;
+  background-color: var(--blue);
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+main {
+  height: 150vh;
+}
+.containerfluid {
+  display: flex;
+  justify-content: center;
+}
+.containerfluidid {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  padding: 0px 20px;
+}
+.topcontainer {
+  text-align: center;
+}
+.topcontainer h1 {
+  font-weight: bold;
+  margin: 20px 0px 5px 0px;
+}
+.line {
+  height: 8px;
+  background-color: var(--lightblue);
+  border-radius: 10px;
+}
+.midcontainer {
+  display: flex;
+  flex-direction: column;
+}
+.midcontainer h1 {
+  font-size: 28px;
+  margin: 10px 0px;
+}
+.midcontainer p {
+  margin: 10px 0px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.midcontainer label {
+  color: var(--lightgrey);
+}
+.midcontainer input {
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom: 2px solid var(--verylightgrey);
+  height: 32px;
+  width: 70%;
+}
+label {
+  margin-top: 32px;
+}
+button {
+  margin-top: 32px;
+  border: none;
+  background-color: var(--lightblue);
+  color: var(--white);
+  border-radius: 5px;
+  padding: 5px 45px;
+  align-self: flex-start;
+  text-align: center;
+  font-weight: bold;
+}
+button:active {
+  background-color: var(--blue);
+}
+.error01,
+.error02,
+.error03,
+.error04,
+.error05,
+.error06,
+.error07,
+.error11,
+.error12,
+.error13,
+.error14 {
+  font-size: 10px;
+  color: var(--red);
+  width: 75%;
+}
+.containerfluidpass {
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  padding: 0px 20px;
+}
+.containerfluidconfirm {
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  padding: 0px 20px;
+}
+.mid {
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .containerfluidid,
+  .containerfluidconfirm,
+  .containerfluidpass {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 468px) {
+  .containerfluidid,
+  .containerfluidconfirm,
+  .containerfluidpass,
+  .midcontainer input {
+    width: 100%;
+  }
+  button {
+    align-self: stretch;
+  }
+}
